@@ -53,5 +53,4 @@ npm run build
 
 ```
 
-🙋‍♀️ Author
-Built with 💜 by Akshita Shetty
+🙋‍♀️ Author: Akshita Shetty. Built with 💜.
