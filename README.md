@@ -51,8 +51,7 @@ npm run dev
 # Build for production
 npm run build
 
+```
 
 🙋‍♀️ Author
 Built with 💜 by Akshita Shetty
-
-```
