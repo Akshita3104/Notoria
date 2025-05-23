@@ -6,7 +6,7 @@
 
 ## 🚀 Live Website
 
-🔗 [View Live](https://vercel.com/akshita-shettys-projects/notoria)
+🔗 [View Live](https://notoria-nine.vercel.app/)
 
 ---
 
