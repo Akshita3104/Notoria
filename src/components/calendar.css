@@ -1,0 +1,171 @@
+.calendar-page {
+  margin-left: 50px;
+  padding: 30px;
+  color: var(--text-primary);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.calendar-day {
+  background-color: var(--bg-darker);
+  padding: 10px;
+  min-height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calendar-day:hover {
+  background-color: var(--bg-light);
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.day-number {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-indicator {
+  font-size: 0.8rem;
+  color: var(--accent);
+  background-color: var(--accent-dark);
+  padding: 2px 5px;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.events-list {
+  margin-top: 30px;
+  background-color: var(--bg-darker);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 700px;
+  color: var(--text-primary);
+}
+
+.events-list h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.events-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.events-list ul li {
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.events-list ul li:hover {
+  background-color: var(--bg-light);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--bg-darker);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  color: var(--text-primary);
+}
+
+.modal h3 {
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.modal textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-buttons button:first-child {
+  background-color: var(--accent);
+  color: white;
+}
+
+.modal-buttons button:nth-child(2) {
+  background-color: #e74c3c; /* red for Delete */
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}

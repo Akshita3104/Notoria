@@ -1,0 +1,115 @@
+.notes-page {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+  height: calc(100vh - 60px);
+}
+
+.notes-sidebar {
+  width: 350px;
+  background-color: var(--bg-darker);
+  padding: 20px;
+  border-right: 1px solid var(--border);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.notes-sidebar h2 {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.notes-sidebar button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--bg-light);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notes-list li:hover {
+  background-color: var(--border);
+}
+
+.notes-list li.active {
+  background-color: var(--accent-dark);
+}
+
+.notes-list li h4 {
+  margin-bottom: 5px;
+}
+
+.notes-list li p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.notes-editor {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-editor input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 5px;
+}
+
+.notes-editor textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 5px;
+  resize: none;
+}
+
+.editor-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.editor-buttons button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.empty-editor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-align: center;
+}

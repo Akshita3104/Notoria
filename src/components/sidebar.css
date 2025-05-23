@@ -1,0 +1,38 @@
+.sidebar {
+  width: 300px;
+  background-color: var(--bg-darker);
+  padding: 20px;
+  border-right: 1px solid var(--border);
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar-header {
+  margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li {
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-menu li:hover {
+  background-color: var(--bg-light);
+}
+
+.sidebar-menu li.active {
+  background-color: var(--accent-dark);
+  color: white;
+}
