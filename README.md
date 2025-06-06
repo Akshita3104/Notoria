@@ -1,6 +1,6 @@
-# PersonalHub
+# Notoria
 
-**PersonalHub** is a modern and visually engaging productivity application built with **React**, **Vite**, and **Electron**. It includes tools like note-taking, a music player, and a clean, purple-themed interface. The app is available as both a web app and desktop application.
+**Notoria** is a modern and visually engaging productivity application built with **React**, **Vite**, and **Electron**. It includes tools like note-taking, a music player, and a clean, purple-themed interface. The app is available as both a web app and desktop application.
 
 ---
 
